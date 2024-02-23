@@ -14,7 +14,7 @@ class Play:
         levelBase = level*100
         rating = 0
         if score >= 1_007_500:
-            rating = levelBase + 200
+            rating = (levelBase + 200)/100
         elif score >= 1_000_000:
             rating = math.floor((levelBase + 150) + (math.floor((score - 1000000) / 150))) / 100
         elif score >= 970_000:
